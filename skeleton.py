@@ -2,7 +2,6 @@
 
 from errbot import BotPlugin, botcmd
 from errbot.builtins.webserver import webhook
-from errbot.utils import get_jid_from_message
 
 class Skeleton(BotPlugin):
 	""""An Err plugin skeleton"""

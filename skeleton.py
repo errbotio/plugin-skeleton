@@ -45,10 +45,6 @@ class Skeleton(BotPlugin):
 		self.shelf['counter'] = 0
 		return "Counter reset"
 
-	@botcmd(split_args_with=None)
-	def jidtest(self, mess, args):
-		return get_jid_from_message(mess)
-
 	@webhook
 	def counter(self, incoming_request):
 		return "My counter has ticked {0} times since being reset\n".format(self.shelf['counter'])

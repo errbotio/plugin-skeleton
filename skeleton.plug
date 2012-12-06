@@ -1,0 +1,7 @@
+[Core]
+Name = Skeleton
+Module = skeleton
+    
+[Documentation]
+Description = An Err plugin skeleton
+

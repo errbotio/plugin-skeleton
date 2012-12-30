@@ -4,7 +4,7 @@ from errbot import BotPlugin, botcmd
 from errbot.builtins.webserver import webhook
 
 class Skeleton(BotPlugin):
-	""""An Err plugin skeleton"""
+	"""An Err plugin skeleton"""
 	min_err_version = '1.6.0' # Optional, but recommended
 	max_err_version = '1.7.1' # Optional, but recommended
 

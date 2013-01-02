@@ -47,20 +47,20 @@ class Skeleton(BotPlugin):
 		You should delete it if you're not using it to override any default behaviour"""
 		pass
 
-	def callback_botmessage(self, conn, message):
+	def callback_botmessage(self, message):
 		"""Triggered for every message that comes from the bot itself
 
 		You should delete it if you're not using it to override any default behaviour"""
 		pass
 
+	@webhook
+	def example_webhook(self, incoming_request):
+		"""A webhook which simply returns 'Example'"""
+		return "Example"
+
 	# Passing split_args_with=None will cause arguments to be split on any kind
 	# of whitespace, just like Python's split() does
 	@botcmd(split_args_with=None)
-	@webhook
-	def example(self, incoming_request):
-		"""An example command
-
-		Simply returns the string "Example" and is available as a webhook on /example/
-		as well (assuming the 'Webserver' plugin is correctly configured).
-		"""
+	def example(self, mess, args):
+		"""A command which simply returns 'Example'"""
 		return "Example"

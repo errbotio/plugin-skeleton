@@ -1,7 +1,9 @@
 [Core]
 Name = Skeleton
 Module = skeleton
-    
+
 [Documentation]
 Description = An Err plugin skeleton
 
+[Python]
+Version = 3

@@ -1,7 +1,6 @@
 # This is a skeleton for Err plugins, use this to get started quickly.
 
-from errbot import BotPlugin, botcmd
-from errbot.builtins.webserver import webhook
+from errbot import BotPlugin, botcmd, webhook
 
 
 class Skeleton(BotPlugin):

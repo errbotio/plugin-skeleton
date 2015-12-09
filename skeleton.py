@@ -40,7 +40,7 @@ class Skeleton(BotPlugin):
 		You should delete it if you're not using it to override any default behaviour"""
 		pass
 
-	def callback_message(self, conn, message):
+	def callback_message(self, message):
 		"""Triggered for every received message that isn't coming from the bot itself
 
 		You should delete it if you're not using it to override any default behaviour"""

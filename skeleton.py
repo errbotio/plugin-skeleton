@@ -28,9 +28,10 @@ class Skeleton(BotPlugin):
 
         You should delete it if your plugin doesn't use any configuration like this
         """
-        return {'EXAMPLE_KEY_1': "Example value",
-                'EXAMPLE_KEY_2': ["Example", "Value"]
-               }
+        return {
+            "EXAMPLE_KEY_1": "Example value",
+            "EXAMPLE_KEY_2": ["Example", "Value"],
+        }
 
     def check_configuration(self, configuration):
         """
